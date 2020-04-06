@@ -3,10 +3,10 @@
 ## Vulnerable SSL/TLS Versions
 |Issue|Severity|Attack pre-requisites|Impact|Description|References|
 |-----|--------|---------------------|------|-----------|----------|
-|SSLv2|Medium|MITM|Exposure and tampering in real-time|First released version of SSL that does not protect against MITM. Also susceptible to Bleichenbacher '98 attack to encrypt and decrypt with RSA private key.||
+|SSLv2|Medium|MITM|Exposure and tampering in real-time|First released version of SSL that does not protect against MITM. Also susceptible to Bleichenbacher '98 (see BB98) attack to encrypt and decrypt data with server's RSA private key.||
 |SSLv3|Low|BEASTly, CBC|Decryption of data|POODLE attack, allows decryption of data through a padding oracle attack. BEAST, allows decryption of data through a padding oracle attack. Requires BEASTly attack model.||
 |TLSv1.0|Low|BEASTly, CBC|Decryption of data|see BEAST||
-|DROWN|Medium|Adjacent network, RSA, key reuse across TLS versions|Decryption of data|BB98, as applied to SSLv2, to recover session keys encrypted with the server's RSA private key, can be used in conjuntion with key reuse across different available versions of SSL/TLS to recover session keys from captured sessions and decrypt application data.|https://drownattack.com/|
+|DROWN|Medium|Adjacent network, RSA, key reuse across TLS versions|Decryption of data|BB98, as applied to SSLv2, to recover session keys encrypted with the server's RSA private key, can be used in conjunction with key reuse across different available versions of SSL/TLS to recover session keys from captured sessions and decrypt application data.|https://drownattack.com/|
 
 ## Vulnerable cipher suites
 |Issue|Severity|Attack pre-requisites|Impact|Description|References|
