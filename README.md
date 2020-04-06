@@ -1,4 +1,5 @@
 # SSL/TLS Vulnerability Cheat Sheet
+by Daniel Crowley, Research Baron at X-Force Red
 
 ## Vulnerable SSL/TLS Versions
 |Issue|Severity|Attack pre-requisites|Impact|Description|References|
